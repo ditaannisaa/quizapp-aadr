@@ -12,6 +12,7 @@ import {
 } from '@gluestack-ui/themed';
 import React, { useEffect, useState } from 'react';
 import { ImageBackground, StyleSheet } from 'react-native';
+import { AppLottieView } from '../../components';
 
 export default function FindingOpponentPage({ navigation }) {
   const styles = StyleSheet.create({
@@ -109,11 +110,21 @@ export default function FindingOpponentPage({ navigation }) {
           >
             <AvatarFallbackText>User Name</AvatarFallbackText>
           </Avatar>
-          <Image
+          <AppLottieView
+            animation={require('./Loading-dots.json')}
+            autoPlay
+            loop
+            style={{
+              width: 200,
+              height: 150,
+            }}
+            bgColor="red"
+          />
+          {/* <Image
             source={require('../FindingOpponentPage/finding.gif')}
             style={styles.search}
             role="img"
-          />
+          /> */}
           <Button
             rounded={'$2xl'}
             backgroundColor="$tertiaryButton"

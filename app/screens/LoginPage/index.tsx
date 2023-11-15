@@ -65,9 +65,9 @@ export default function LoginPage({ navigation }) {
           rounded="$lg"
           backgroundColor="$secondaryBg"
           gap="$2"
-          // onPress={() => {
-          //   login();
-          // }}
+          onPress={() => {
+            login();
+          }}
           width="70%"
           mt={'$5'}
         >
