@@ -124,7 +124,7 @@ export default function HomePage({ navigation }) {
         <Box>
           <Image
             source={require('../../../assets/adaptive-icon.png')}
-            alt="Logo"
+            alt="Diamond"
             size="xl"
             role="img"
           />
@@ -173,7 +173,7 @@ export default function HomePage({ navigation }) {
             >
               <Image
                 source={require('../../../assets/crown.png')}
-                alt="Logo"
+                alt="crown"
                 size="xs"
                 role="img"
                 mb={'$2'}
@@ -228,6 +228,7 @@ export default function HomePage({ navigation }) {
                   alt="Leaderboard-1"
                   width={70}
                   height={45}
+                  role="img"
                 />
               </Box>
               <Box alignSelf="flex-end">
@@ -248,6 +249,7 @@ export default function HomePage({ navigation }) {
                   alt="Leaderboard-3"
                   width={70}
                   height={28}
+                  role="img"
                 />
               </Box>
             </HStack>
